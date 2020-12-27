@@ -3,17 +3,22 @@
 }
 
 .nav__list {
+   overflow-x: scroll;
    display: flex;
    justify-content: space-between;
    align-items: center;
    margin: 0;
    padding-left: 0;
    list-style-type: none;
+}
 
+.nav__list::-webkit-scrollbar {
+   display: none;
 }
 
 .nav__item {
    position: relative;
+   flex-shrink: 0;
 }
 
 
@@ -37,8 +42,6 @@
 .nav__item:hover::after {
    opacity: 1;
 }
-
-
 
 .nav__link {
    display: inline-block;
